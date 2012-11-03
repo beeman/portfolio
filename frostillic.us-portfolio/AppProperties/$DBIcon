@@ -2,64 +2,46 @@
 <!DOCTYPE note SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
 <note class='form' xmlns='http://www.lotus.com/dxl' version='8.5' maintenanceversion='3.0'
  replicaid='85257AAB00645907'>
-<noteinfo noteid='18a' unid='EE6DBC271CF713FF852577EF006A6BB1' sequence='1'>
-<created><datetime>20101204T142223,85-05</datetime></created>
-<modified><datetime dst='true'>20121103T141606,58-04</datetime></modified>
-<revised><datetime>20101204T142223,95-05</datetime></revised>
-<lastaccessed><datetime dst='true'>20121103T141606,57-04</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20121103T141606,57-04</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Jesse Gallagher/O=MTC</name></updatedby>
-<wassignedby><name>CN=Jesse Gallagher/O=MTC</name></wassignedby>
+<noteinfo noteid='1da' unid='91C8118384C4A65385257AAB006541EF' sequence='1'>
+<created><datetime dst='true'>20121103T142600,15-04</datetime></created>
+<modified><datetime dst='true'>20121103T142600,27-04</datetime></modified>
+<revised><datetime dst='true'>20121103T142600,26-04</datetime></revised>
+<lastaccessed><datetime dst='true'>20121103T142600,26-04</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20121103T142600,26-04</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Jesse Gallagher/O=Frost</name></updatedby>
+<wassignedby><name>CN=Jesse Gallagher/O=Frost</name></wassignedby>
 <item name='$TITLE'><text>$DBIcon</text></item>
 <item name='$Flags'><text>34Ci~Q</text></item>
 <item name='$ImagesWide' sign='true'><number>1</number></item>
 <item name='$ImagesHigh' sign='true'><number>1</number></item>
 <item name='$ImagesColorize' sign='true'><number>0</number></item>
-<item name='$FileSize' sign='true'><number>2183</number></item>
+<item name='$FileSize' sign='true'><number>1176</number></item>
 <item name='$ImageData' sign='true'>
 <rawitemdata type='1'>
-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
-fMnzvP8BdHeLwdgeoG0AAAAASUVORK5CYIIA
+mQAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAH0AHAAAAAIAAAAAAJgEAAABAAAAAQAAAAAAAAB8
+AKIEAACYBJgEiVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhk
+iAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vu
+PBoAAAQVSURBVFiF7Zc9bxxFGMd/M7t3e6/2OZEwCQVWlMIfAAkFIVNulYIaiQJaOj5AJD5ASoRE
+hWihQ0inQBfJigKK0kXCxsQoFsb3unfel5mdGYp7yTp3jhNyUij4S492dnb3eX7zPDOzuyIMQ16n
+5GuN/l8A8AFu3LjhK6V+Nsa8d9EDQojcWvv5w4cPv1wZQJqmW5VK5Z2bN2/6SZLgnAPAWgswP5+2
+/Tt37tze3t7+/tGjR8crAVBKZdVq1R0dHdHpdHDOLTUAIQSbm5v5wcHBR8DtlQBordMsy8SlSxsY
+Y7DWnglczIQQgmq1Wj88PPxie3v71qx/mZxz2lr78d7e3o/PBQCyLMu8TqdLp9OZA8yOsyDFQFtb
+W/VGo0Gz2UQIgRACACnlvB1FEffu3bsFPB/g8uXLab/f9zY2WmitFwCWlWKmOI4B5hBFi+MYY0zt
+vOBzgN3dXXXt2jXZ6/XmGQCWgsyyUdRsxMXgUsoZQOVCAABjjG0212SaZtw/tNzdPxvkvDo/qxnM
+5JkWzl25ztsf6OI9nie+Xf/9m0/OADjndLfb9bvdLo87DT798F2uv7VRcDY9Pi/6EshpzzzOk86Y
+r767//7svJgB3WjUq1pr1B+SZrXM/t9jojifjGzpaM8jEQtNATQqPirTCEFndnm+FRtjdL8/oNvt
+EmeWerWENZMb5NTBs4Y7z9xTsxOz1pFkhjTLwYn5BlYsQVapBLRaLTIjqAUlrFN4cjWvi3GaU2/6
+jIY51ronCwB5nqsoGtHvD9DmDaqBj3MOT56b5xeTg1Gq0bkl8CVxqq0x+dECgDEmK5dLVJsbrNXK
+OEAKsbz4LyjjHKNUk1uH5wmCssdpkikhxMkCgLU2G43GHA8U6/VL6Ny+0ugzbYkzA07gT/2UPcno
+VOWCp5OwmIHU9328IKBJmUzZC4NM5pjDusk+YezEVG6XrUicg8EotblziwDW2mQ8HtMZ+FRaZaJE
+k+npSwjIjUUbh84tuZluyy+ZlUQZhuPEE9JbWoJUCIEMGpRKPqNEEyWaVBmUti8dbJniLOc00T7n
+lCCO41N6UYVKDR6fxAxjvdTRv5EAhrFCGVP69epeL3z8DIC1NgaB9WtkuSWKNUpfPA9eVFIKToYJ
+Usg43N2dOz4zB5IkIUoMV68EVAOPoLy6b1YpBGmqkFIMi/3FEiQAmhLrVY96aRVVfyrnHP0kQVg7
+WABot9tiZ2fHRLFicOr482SI7L7iDrhEx8dDmyTDB7vtdi0Mw3gOAHhRFP30y6H4TK3j/7b/yh+7
+Z+TAAlidHhw/+OHr4jUx+zVrt9vNYG3tzVrQ2nQ4KYVcyRLIjTEqS2u5EHk+OukBf4Vh2FsAmEJI
+IGCSmXwVAFMFQAqoMAzPLC3x/8/p6wb4B7wypZfLCDcrAAAAAElFTkSuQmCC
 </rawitemdata></item>
-<item name='$FileModDT' sign='true'><datetime>20101204T142356,00-05</datetime></item>
-<item name='$ImageNames' sign='true'><text>M:\Documents\Current Jobs\DB Icons\Inv_misc_note_03.png</text></item>
-<item name='$DesignerVersion'><text>8.5.2</text></item></note>
+<item name='$FileModDT' sign='true'><datetime>20080103T130822,00-05</datetime></item>
+<item name='$ImageNames' sign='true'><text>Y:\Pictures\tango-icon-theme-0.8.90\32x32\places\folder.png</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item></note>
 
