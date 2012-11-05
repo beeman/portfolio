@@ -6,13 +6,13 @@
 			<div class="project">
 				<xp:image url="#{project.thumbnailImage}"/>
 			
-				<h2><xp:link value="/Projects/#{project.shortName}" text="#{project.name}"/></h2>
+				<h2><xc:link value="/Projects/#{project.shortName}" text="#{project.name}"/></h2>
 				<xp:text value="#{project.description}" tagName="p"/>
 			</div>
 		</xp:repeat>
 		
-		<xp:panel tagName="p" loaded="${database.currentAccessLevel gt 3}">
-			<xp:link text="New Project" value="/Project.xsp"/>
+		<xp:panel tagName="p" loaded="${database.currentAccessLevel gt 3}" style="clear: left">
+			<xc:link text="New Project" value="/Project.xsp"/>
 		</xp:panel>
 	</xc:layout>
 </xp:view>

@@ -7,19 +7,19 @@
 			<li>
 				<address>
 					<strong>Email</strong>
-					<br /><xp:link value="mailto:jesse@frostillic.us" text="jesse@frostillic.us"/>
+					<br /><xc:link value="mailto:jesse@frostillic.us" text="jesse@frostillic.us"/>
 				</address>
 			</li>
 			<li>
 				<address>
 					<strong>LinkedIn</strong>
-					<br /><xp:link value="https://www.linkedin.com/profile/view?id=16014400" text="http://www.linkedin.com/profile/view?id=16014400"/>
+					<br /><xc:link value="https://www.linkedin.com/profile/view?id=16014400" text="http://www.linkedin.com/profile/view?id=16014400"/>
 				</address>
 			</li>
 			<li>
 				<address>
 					<strong>Twitter</strong>
-					<br /><xp:link value="https://twitter.com/Gidgerby" text="@Gidgerby"/>
+					<br /><xc:link value="https://twitter.com/Gidgerby" text="@Gidgerby"/>
 				</address>
 			</li>
 			

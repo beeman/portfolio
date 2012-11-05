@@ -11,38 +11,22 @@
 
 	<xc:layout>
 		<div class="form-horizontal">
-			<div class="control-group">
-				<xp:label styleClass="control-label" for="Name" value="Name" />
-				<div class="controls">
-					<xp:inputText id="Name" value="#{doc.Name}" />
-				</div>
-			</div>
-			<div class="control-group">
-				<xp:label styleClass="control-label" for="Description" value="Description" />
-				<div class="controls">
-					<xp:inputTextarea id="Description" value="#{doc.Description}" rows="5" styleClass="input-xxlarge"/>
-				</div>
-			</div>
-			<div class="control-group">
-				<xp:label styleClass="control-label" for="URL" value="URL" />
-				<div class="controls">
-					<xp:link id="URLLink" value="#{doc.URL}" text="#{doc.URL}" rendered="#{!pageController.editable}"/>
-					<xp:inputText id="URL" value="#{doc.URL}" rendered="#{pageController.editable}" />
-				</div>
-			</div>
-			
-			<xp:div styleClass="control-group" loaded="${pageController.editable}">
-				<xp:label styleClass="control-label" for="Thumbnail" value="Thumbnail" />
-				<div class="controls">
-					<xp:fileUpload id="Thumbnail" value="#{doc.Thumbnail}"/>
-				</div>
-			</xp:div>
-			<xp:div styleClass="control-group" loaded="${pageController.editable}">
-				<xp:label styleClass="control-label" for="Image" value="Image" />
-				<div class="controls">
-					<xp:fileUpload id="Image" value="#{doc.Image}"/>
-				</div>
-			</xp:div>
+			<xc:bsControlGroup label="Name">
+				<xp:inputText id="Name" value="#{doc.Name}"/>
+			</xc:bsControlGroup>
+			<xc:bsControlGroup label="Description">
+				<xp:inputTextarea id="Description" value="#{doc.Description}" rows="5" styleClass="input-xxlarge"/>
+			</xc:bsControlGroup>
+			<xc:bsControlGroup label="URL">
+				<xp:inputText id="URL" value="#{doc.URL}" rendered="#{pageController.editable}" />
+				<xc:link id="URLLink" value="#{doc.URL}" text="#{doc.URL}" rendered="#{!pageController.editable}"/>
+			</xc:bsControlGroup>
+			<xc:bsControlGroup label="Thumbnail" loaded="${pageController.editable}">
+				<xp:fileUpload id="Thumbnail" value="#{doc.Thumbnail}"/>
+			</xc:bsControlGroup>
+			<xc:bsControlGroup label="Image" loaded="${pageController.editable}">
+				<xp:fileUpload id="Image" value="#{doc.Image}"/>
+			</xc:bsControlGroup>
 		</div>
 
 		<p class="actions">
