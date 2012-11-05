@@ -10,7 +10,7 @@ public class ProjectManager implements Serializable {
 	public static final String DEFAULT_THUMBNAIL = "/tango/package-x-generic.svg";
 	public static final String DEFAULT_IMAGE = "/icons/vwicn999.gif";
 
-	private List<Project> projects;
+	private Set<Project> projects;
 	private Date lastUpdated = null;
 
 	@SuppressWarnings("unchecked")
@@ -30,7 +30,7 @@ public class ProjectManager implements Serializable {
 		}
 
 		if(needsReset) {
-			this.projects = new ArrayList<Project>();
+			this.projects = new TreeSet<Project>();
 
 			Database database = ExtLibUtil.getCurrentDatabase();
 			View projectsView = database.getView("Projects");

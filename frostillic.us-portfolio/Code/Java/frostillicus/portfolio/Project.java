@@ -2,7 +2,7 @@ package frostillicus.portfolio;
 
 import java.io.Serializable;
 
-public class Project implements Serializable {
+public class Project implements Serializable, Comparable<Project> {
 	private static final long serialVersionUID = 1L;
 
 	private String shortName;
@@ -29,4 +29,8 @@ public class Project implements Serializable {
 
 	public String getImage() { return image; }
 	public void setImage(String image) { this.image = image; }
+
+	public int compareTo(Project arg0) {
+		return this.getName().compareToIgnoreCase(arg0.getShortName());
+	}
 }
