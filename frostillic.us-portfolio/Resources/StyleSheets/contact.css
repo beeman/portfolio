@@ -1,0 +1,23 @@
+.contact {
+	margin: 0;
+	padding: 0;
+}
+.contact li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: block;
+	
+	width: 250px;
+	min-height: 3em;
+	float: left;
+	margin-right: 3em;
+	margin-bottom: 3em;
+	overflow: hidden;
+}
+.contact li a {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: block;
+	overflow: hidden;
+}

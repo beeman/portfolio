@@ -16,3 +16,5 @@ footer {
 .project h2, .project p {
 	/*margin-left: 136px;*/
 }
+
+.clear { clear: both }

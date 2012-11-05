@@ -7,17 +7,10 @@
 				
 				<div class="nav-collapse">
 					<ul class="nav">
-						<li><xc:link value="/Projects.xsp" text="Projects"/></li>
-						<li><xc:link value="/Resume.xsp" text="Resume"/></li>
-						<li><xc:link value="/Contact.xsp" text="Contact"/></li>
+						<li class="${view.pageName=='/Projects.xsp' ? 'active' : ''}"><xc:link value="/Projects.xsp" text="Projects"/></li>
+						<li class="${view.pageName=='/Resume.xsp' ? 'active' : ''}"><xc:link value="/Resume.xsp" text="Resume"/></li>
+						<li class="${view.pageName=='/Contact.xsp' ? 'active' : ''}"><xc:link value="/Contact.xsp" text="Contact"/></li>
 					</ul>
-<!--					<xe:outline styleClzzass="nav">-->
-<!--						<xe:this.treeNodes>-->
-<!--							<xe:pageTreeNode page="Projects" label="Projects"/>-->
-<!--							<xe:pageTreeNode page="Resume" label="Resume"/>-->
-<!--							<xe:pageTreeNode page="Contact" label="Contact"/>-->
-<!--						</xe:this.treeNodes>-->
-<!--					</xe:outline>-->
 				</div>
 			</div>
 		</div>

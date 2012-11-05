@@ -2,6 +2,7 @@
 	<resources>
 		<styleSheet type="text/css" href="/style.css"/>
 		<styleSheet type="text/css" href="/resume.css"/>
+		<styleSheet type="text/css" href="/contact.css"/>
 	</resources>
 
 	<control>
