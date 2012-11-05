@@ -7,39 +7,6 @@
 	</xp:this.data>
 
 	<xc:layout>
-<!--		<ul>-->
-<!--			<li>-->
-<!--				<address>-->
-<!--					<strong>Email</strong>-->
-<!--					<br /><xc:link value="mailto:jesse@frostillic.us" text="jesse@frostillic.us"/>-->
-<!--				</address>-->
-<!--			</li>-->
-<!--			<li>-->
-<!--				<address>-->
-<!--					<strong>LinkedIn</strong>-->
-<!--					<br /><xc:link value="https://www.linkedin.com/profile/view?id=16014400" text="http://www.linkedin.com/profile/view?id=16014400"/>-->
-<!--				</address>-->
-<!--			</li>-->
-<!--			<li>-->
-<!--				<address>-->
-<!--					<strong>Twitter</strong>-->
-<!--					<br /><xc:link value="https://twitter.com/Gidgerby" text="@Gidgerby"/>-->
-<!--				</address>-->
-<!--			</li>-->
-<!--			<li>-->
-<!--				<address>-->
-<!--					<strong>OpenNTF</strong>-->
-<!--					<br /><xc:link value="http://www.openntf.org/Internal/home.nsf/profile.xsp?name=Jesse%20Gallagher" text="http://www.openntf.org/Internal/home.nsf/profile.xsp?name=Jesse%20Gallagher"/>-->
-<!--				</address>-->
-<!--			</li>-->
-<!--			<li>-->
-<!--				<address>-->
-<!--					<strong>GitHub</strong>-->
-<!--					<br /><xc:link value="https://github.com/jesse-gallagher" text="https://github.com/jesse-gallagher"/>-->
-<!--				</address>-->
-<!--			</li>	-->
-<!--		</ul>-->
-		
 		<xp:repeat value="#{contactMethods}" var="method" rows="1000">
 			<xp:this.facets>
 				<xp:text xp:key="header" disableTheme="true" escape="false" value="&lt;ul&gt;"/>

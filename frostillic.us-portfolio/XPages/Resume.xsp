@@ -3,11 +3,103 @@
 	pageTitle="Resume">
 
 	<xc:layout>
-		<table>
-			<tr>
-				<td style="padding-right: 1em"><xp:link value="/resume.pdf"><xp:image url="/Adobe_PDF_Icon.png"/></xp:link></td>
-				<td><xp:link value="/resume.pdf" text="PDF Version"/></td>
-			</tr>
-		</table>
+		<div class="resume">
+			<h3>Jesse Gallagher</h3>
+			<p>200 South Line Street, Unit 151, Lansdale, PA 19446 <span class="dot">•</span> 610-804-8550 <span class="dot">•</span> jesse@secondfoundation.org</p>
+			
+			<h4>Summary of Qualifications</h4>
+			<hr />
+			
+			<p>I have been doing Lotus Domino development and administration for the past six years, giving me fluency in its
+			data structuring, performance optimization, and replication/clustering setups.</p>
+			
+			<p>I have worked extensively with XPages for the last several years, using my blog (<xc:link value="http://frostillic.us/" text="http://frostillic.us/"/>) to
+			explore the best ways to write XPages applications and to push the platform forward. I have published
+			a project that adds Ruby language support to XPages (<xc:link value="http://frostillic.us/rix" text="http://frostillic.us/rix"/>), a legacy-design-element editor for
+			the web (<xc:link value="http://frostillic.us/fnv" text="http://frostillic.us/fnv"/>), several utility classes to expand existing controls (such
+			as my DynamicViewCustomizer and code to use legacy Outline elements in xe:navigator trees), as well as numerous other
+			useful code snippets and discussions.</p>
+			
+			<p>My work at MedConference has primarily involved creating a database template for clients’ registration/tracking web sites
+			and implementing their design requests. This has involved extensive HTML, CSS, and JavaScript work using Prototype, Ext, and
+			Dojo. Additionally, I built the company’s project-tracking database and have been building an all-encompassing client portal
+			in XPages to pull data from that tracking database, the individual project databases, and several SQL stores.</p>
+			
+			<p>My non-XPages work involved many of the trickier aspects of legacy Notes development, such as run-on-server
+			agents to selectively raise permissions, integrating JavaScript frameworks to clean up the old-style markup
+			and allow for Notes-user-side database behavior customization, and using DXL to create a UI for non-designer
+			users to create and modify forms and reporting views on the fly.</p>
+			
+			<p>Additionally, I have been working on a Ruby wrapper for Domino’s C API (<xc:link value="http://frostillic.us/capi" text="http://frostillic.us/capi"/>),
+			giving me experience with Ruby’s FFI library, C data structures, and the low-level mechanisms of Domino.</p>
+			
+			<p>My system administration duties have involved setting up and administering numerous Domino servers,
+			FreeBSD FTP/SFTP servers, and several Hyper-V servers.</p>
+			
+			<h4>Experience</h4>
+			<hr />
+			
+			<p class="pull-right">Dec. 2005 - Present</p>
+			<h5>Lotus Domino Programmer, MedConference LLC</h5>
+			<p>MedConference is a web conferencing company focusing on running and managing online events for the
+			Life Sciences industry. During my time there, my primary responsibility has been creating and maintaining
+			our project registration/site database template, integrating with our online conference platform, implementing
+			client site designs, and numerous other project-specific customizations such as custom reports and data integration.
+			In addition, I created and have maintained our internal project-tracking database and numerous other internal
+			applications.</p>
+			
+			<p>My day-to-day interactions involve receiving specs from and discussing project needs with the program development
+			team, participating in project initiation meetings and ongoing client support as the technical lead, and streamlining
+			internal processes with our operations department.</p>
+			
+			<p class="pull-right">April 2005 - Dec. 2005</p>
+			<h5>Media Specialist, MedConference LLC</h5>
+			<p>My time as a media specialist consisted primarily of recording online conferences and editing the audio for
+			use in our OnDemand platform.</p>
+			
+			<p class="pull-right">Circa 2001 - April 2005</p>
+			<h5>Freelance Consulting</h5>
+			<p>Prior to MedConference, I worked freelance, supporting individual clients, and as a consultant with Redwood
+			Training &amp; Consulting, Inc. providing web-site design and creation, computer repair services, network installation,
+			and upgrade assistance.</p>
+			
+			<h4>Education</h4>
+			<hr />
+			
+			<p class="pull-right">2003-2005</p>
+			<h5>West Chester University of Pennsylvania</h5>
+			<p>BS in Computer Science
+			<br />Minor in French</p>
+			
+			<p class="pull-right">2001-2003</p>
+			<h5>Arizona State University</h5>
+			
+			<h4>Skills</h4>
+			<hr />
+			
+			<p>Most of my development since 2005, both professionally and in my spare time, has been in Lotus Domino, and so I
+			have developed a proficiency in the technologies related to that, such as Domino itself and its data model, XPages,
+			Java, LotusScript, and Lotus’s Formula language.</p>
+			
+			<p>Additionally, since most of my work is web-based, I am very familiar with HTML, CSS, and JavaScript, with some
+			experience in the JavaScript toolkits Prototype, Ext, and, more recently, Dojo.</p>
+			
+			<p>I regularly create open-source code snippets and projects related to Domino, which are found on my blog
+			(<xc:link value="http://frostillic.us" text="http://frostillic.us"/>) and GitHub profile
+			(<xc:link value="https://github.com/jesse-gallagher" text="https://github.com/jesse-gallagher"/>).</p>
+			
+			<p>My normal development environment is Mac OS X running Domino Designer in Windows via Parallels.
+			Whenever possible, I program in TextMate instead.</p>
+			
+			<p>Through casual and business use, I have developed a proficiency with Unix (Mac OS, Linux, and FreeBSD)
+			and Windows, maintaining server and client instances of each at various times.</p>
+	
+			<table class="download">
+				<tr>
+					<td style="padding-right: 1em"><xp:link value="/resume.pdf"><xp:image url="/Adobe_PDF_Icon.png"/></xp:link></td>
+					<td><xp:link value="/resume.pdf" text="PDF Version"/></td>
+				</tr>
+			</table>
+		</div>
 	</xc:layout>
 </xp:view>

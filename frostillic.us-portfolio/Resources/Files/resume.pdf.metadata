@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="3.0" replicaid="85257AAB00645907" version="8.5" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="326" sequence="3" unid="44BFD6FCBF51C15085257AAB0071DDA7">
+<noteinfo noteid="326" sequence="4" unid="44BFD6FCBF51C15085257AAB0071DDA7">
 <created><datetime dst="true">20121103T164343,11-04</datetime></created>
-<modified><datetime dst="true">20121103T164400,10-04</datetime></modified>
-<revised><datetime dst="true">20121103T164400,09-04</datetime></revised>
-<lastaccessed><datetime dst="true">20121103T164400,09-04</datetime></lastaccessed>
+<modified><datetime>20121105T102950,41-05</datetime></modified>
+<revised><datetime>20121105T102950,40-05</datetime></revised>
+<lastaccessed><datetime>20121105T102950,40-05</datetime></lastaccessed>
 <addedtofile><datetime dst="true">20121103T164343,32-04</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Jesse Gallagher/O=MTC</name></updatedby>
 <wassignedby><name>CN=Jesse Gallagher/O=MTC</name></wassignedby>
-<item name="$Flags"><text>345CgQ</text></item>
 <item name="$FlagsExt"><text>D</text></item>
-
-<item name="$FileModDT" sign="true"><datetime dst="true">20121103T164307,00-04</datetime></item>
-
-
-
-<item name="$FileNames" sign="true"><text>Jesse resume_2C.pdf</text></item>
-<item name="$TITLE" sign="true"><textlist><text>resume.pdf</text></textlist></item>
+<item name="$TITLE" sign="true"><text>resume.pdf</text></item>
 <item name="$DesignerVersion"><text>8.5.3</text></item>
-<item name="$MimeType"><text>application/pdf</text></item></note>
+
+<item name="$FileModDT" sign="true"><datetime>20121105T102908,00-05</datetime></item>
+
+
+
+<item name="$Flags"><text>345CgQ</text></item>
+<item name="$FileNames" sign="true"><text>Jesse resume_2C_RV.pdf</text></item></note>

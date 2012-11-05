@@ -1,0 +1,31 @@
+.resume h4 {
+	margin-top: 1.5em;
+	color: #777776;
+}
+
+.resume .dot {
+	color: #659960;
+	font-size: 2em;
+	margin: 0 0.5em;
+	line-height: 0.66;
+	position: relative;
+	top: 0.2em;
+}
+
+.resume hr {
+	height: 0.5em;
+	background-color: #659960;
+	
+	background-image: linear-gradient(left, rgb(101,153,96) 0%, rgb(255,255,255) 100%);
+	background-image: -o-linear-gradient(left, rgb(101,153,96) 0%, rgb(255,255,255) 100%);
+	background-image: -moz-linear-gradient(left, rgb(101,153,96) 0%, rgb(255,255,255) 100%);
+	background-image: -webkit-linear-gradient(left, rgb(101,153,96) 0%, rgb(255,255,255) 100%);
+	background-image: -ms-linear-gradient(left, rgb(101,153,96) 0%, rgb(255,255,255) 100%);
+}
+
+.resume .pull-right {
+	font-weight: bold;
+	color: #777776;
+}
+
+.resume .download { margin-top: 3em }
