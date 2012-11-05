@@ -4,14 +4,15 @@ footer {
 
 .project {
 	clear: left;
+	min-height: 128px;
 }
-.project + .project { margin-top: 4em }
+.project + .project { margin-top: 3em }
 .project img {
 	width: 128px;
-	height: 128pxpx;
-	float: left;
-	margin-right: 8px;
+	height: 128px;
+	/*float: left;*/
+	margin-right: 1em;
 }
 .project h2, .project p {
-	margin-left: 136px;
+	/*margin-left: 136px;*/
 }

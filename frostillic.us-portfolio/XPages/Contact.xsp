@@ -1,28 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom"
 	pageTitle="Contact">
+	
+	<xp:this.data>
+		<xp:dominoView var="contactMethods" ignoreRequestParams="true" viewName="Contact Methods"/>
+	</xp:this.data>
 
 	<xc:layout>
-		<ul>
-			<li>
-				<address>
-					<strong>Email</strong>
-					<br /><xc:link value="mailto:jesse@frostillic.us" text="jesse@frostillic.us"/>
-				</address>
-			</li>
-			<li>
-				<address>
-					<strong>LinkedIn</strong>
-					<br /><xc:link value="https://www.linkedin.com/profile/view?id=16014400" text="http://www.linkedin.com/profile/view?id=16014400"/>
-				</address>
-			</li>
-			<li>
-				<address>
-					<strong>Twitter</strong>
-					<br /><xc:link value="https://twitter.com/Gidgerby" text="@Gidgerby"/>
-				</address>
-			</li>
+<!--		<ul>-->
+<!--			<li>-->
+<!--				<address>-->
+<!--					<strong>Email</strong>-->
+<!--					<br /><xc:link value="mailto:jesse@frostillic.us" text="jesse@frostillic.us"/>-->
+<!--				</address>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<address>-->
+<!--					<strong>LinkedIn</strong>-->
+<!--					<br /><xc:link value="https://www.linkedin.com/profile/view?id=16014400" text="http://www.linkedin.com/profile/view?id=16014400"/>-->
+<!--				</address>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<address>-->
+<!--					<strong>Twitter</strong>-->
+<!--					<br /><xc:link value="https://twitter.com/Gidgerby" text="@Gidgerby"/>-->
+<!--				</address>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<address>-->
+<!--					<strong>OpenNTF</strong>-->
+<!--					<br /><xc:link value="http://www.openntf.org/Internal/home.nsf/profile.xsp?name=Jesse%20Gallagher" text="http://www.openntf.org/Internal/home.nsf/profile.xsp?name=Jesse%20Gallagher"/>-->
+<!--				</address>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<address>-->
+<!--					<strong>GitHub</strong>-->
+<!--					<br /><xc:link value="https://github.com/jesse-gallagher" text="https://github.com/jesse-gallagher"/>-->
+<!--				</address>-->
+<!--			</li>	-->
+<!--		</ul>-->
+		
+		<xp:repeat value="#{contactMethods}" var="method" rows="1000">
+			<xp:this.facets>
+				<xp:text xp:key="header" disableTheme="true" escape="false" value="&lt;ul&gt;"/>
+				<xp:text xp:key="footer" disableTheme="true" escape="false" value="&lt;/ul&gt;"/>
+			</xp:this.facets>
 			
-		</ul>
+			<li>
+				<address>
+					<xp:text styleClass="" tagName="strong" value="#{method.Name}"/>
+					<br /><xc:link value="#{method.URL}" text="#{method.Text}"/>
+				</address>
+			</li>
+		</xp:repeat>
+		
+		
+		<xp:panel tagName="p" loaded="${database.currentAccessLevel gt 3}" style="clear: left">
+			<xc:link text="New Contact Method" value="/ContactMethod.xsp"/>
+		</xp:panel>
 	</xc:layout>
 </xp:view>
