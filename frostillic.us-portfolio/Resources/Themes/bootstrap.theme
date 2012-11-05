@@ -1,33 +1,40 @@
-<!--
-	The default theme contents use theme inheritance.
-
-	Application themes can extend an existing global theme using the
-	extends attribute.  Existing themes include the following options:
-
-	1. webstandard 2. oneui 3. notes
--->
-<theme extends="webstandard" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd" >
-	<!-- 
-		Use this pattern to include resources (such as style sheets
-		and JavaScript files that are used by this theme.
-	-->
-	<!--
-	<resource>
-		<content-type>text/css</content-type>
-		<href>mystylesheet.css</href>
-	</resource>
-	-->
-
-	<!--
-		Use this pattern to define property name/value pairs for controls
-	-->
-	<!--
+<theme extends="webstandard" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd">
+	<resources>
+		<metaData name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+<!--		<styleSheet type="text/css" href="/css/bootstrap.css"/>-->
+		<styleSheet type="text/css" href="/css/bootstrap-ubuntu.min.css"/>
+		<styleSheet type="text/css" href="/css/bootstrap-responsive.css"/>
+		<styleSheet type="text/css" href="/css/docs.css"/>
+	</resources>
+	
 	<control>
-		<name>[Control Name]</name>
+		<name>Button.Command</name>
 		<property>
-			<name>[property Name]</name>
-			<value>[property Value]</value>
+			<name>styleClass</name>
+			<value>btn</value>
 		</property>
 	</control>
-	-->
+	<control>
+		<name>Button.Submit</name>
+		<property>
+			<name>styleClass</name>
+			<value>btn btn-primary</value>
+		</property>
+	</control>
+	<control>
+		<name>Button.Cancel</name>
+		<property>
+			<name>styleClass</name>
+			<value>btn</value>
+		</property>
+	</control>
+	
+	<control>
+		<name>InputField.EditBox</name>
+		<property>
+			<name>styleClass</name>
+			<value></value>
+		</property>
+	</control>
 </theme>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom"
+	pageTitle="Contact">
+
+	<xc:layout>
+		<ul>
+			<li>
+				<address>
+					<strong>Email</strong>
+					<br /><xp:link value="mailto:jesse@frostillic.us" text="jesse@frostillic.us"/>
+				</address>
+			</li>
+			<li>
+				<address>
+					<strong>LinkedIn</strong>
+					<br /><xp:link value="https://www.linkedin.com/profile/view?id=16014400" text="http://www.linkedin.com/profile/view?id=16014400"/>
+				</address>
+			</li>
+			<li>
+				<address>
+					<strong>Twitter</strong>
+					<br /><xp:link value="https://twitter.com/Gidgerby" text="@Gidgerby"/>
+				</address>
+			</li>
+			
+		</ul>
+	</xc:layout>
+</xp:view>

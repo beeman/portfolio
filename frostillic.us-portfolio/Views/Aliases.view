@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE note SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='8.5' maintenanceversion='3.0'
+ replicaid='85257AAB00645907'>
+<noteinfo noteid='34e' unid='DEF1959F43551A3785257AAC0079CE3E' sequence='3'>
+<created><datetime>20121104T171026,54-05</datetime></created>
+<modified><datetime>20121104T171046,25-05</datetime></modified>
+<revised><datetime>20121104T171046,24-05</datetime></revised>
+<lastaccessed><datetime>20121104T171054,90-05</datetime></lastaccessed>
+<addedtofile><datetime>20121104T171026,58-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Jesse Gallagher/O=MTC</name></updatedby>
+<wassignedby><name>CN=Jesse Gallagher/O=MTC</name></wassignedby>
+<item name='$FormatNote' summary='true'>
+<rawitemdata type='4'>
+AQBvCJclHdulowKLbQCreiWF
+</rawitemdata></item>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$TITLE' sign='true'><text>Aliases</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+TgAFACQAHwAEAAQAAgAJAAQARnJvbVRvJENvbmZsaWN0JFJFRgAEAAQAAAAaAAUABABGb3JtAQAF
+AEFsaWFzAAoCAwAHAAoABAAJTDFT
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+EQABAABEgGYAAAAEAEZyb20=
+</rawitemdata></item>
+<item name='$ViewFormat' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQACAAQAiEAAAFZDAQAEAAQAAAAAAFAAAQAACgAAAAAAAAAAAAICAAAAVkMAAAIAAgAAAAAAUAAB
+AAAKAAAAAAAAAAAAAgIAAABGcm9tRnJvbVRvVG8mAAEAAAABAQAJAQAACgEBDgoAAD8ArSsBAAEA
+AQEAAAAAAAAAAFdDAQUACQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAP//AAAAAAAAAAAAAAAAAABX
+QwEBAAkAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAD//wAAAAAAAAAAAAAAAAAAQgARAAAAAQD///8A
+AQDv7+8AAQD///8AAAAAAAAAAAABAP///wABAP///wAAAAEAAAAAAAEAAAAAAAEAAAAAAAAACAAA
+AAAAAQA=
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$Flags'><text>PY</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='$V5ACTIONS' sign='true'>
+<rawitemdata type='1'>
+vRwjAAAAAQABAAAAAQAAAAAAAAAAAAAACAACAHn/bAABANTQyAABAAAAAAAJAAAAAAABANTQyAAA
+AB8AAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAPz/OgAAAAAAAQAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=
+</rawitemdata></item></note>
+

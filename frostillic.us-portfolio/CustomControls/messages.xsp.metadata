@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="3.0" replicaid="85257AAB00645907" version="8.5" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="28a" sequence="4" unid="59A1465E5741EDA885257AAB006CA146">
-<created><datetime dst="true">20121103T154631,74-04</datetime></created>
-<modified><datetime dst="true">20121103T154633,35-04</datetime></modified>
-<revised><datetime dst="true">20121103T154633,33-04</datetime></revised>
-<lastaccessed><datetime dst="true">20121103T154633,33-04</datetime></lastaccessed>
-<addedtofile><datetime dst="true">20121103T154631,77-04</datetime></addedtofile></noteinfo>
+<noteinfo noteid="2b6" sequence="7" unid="DDFA0A75DF6B1D5D85257AAB006D24BD">
+<created><datetime dst="true">20121103T155208,29-04</datetime></created>
+<modified><datetime dst="true">20121103T165028,38-04</datetime></modified>
+<revised><datetime dst="true">20121103T165028,36-04</datetime></revised>
+<lastaccessed><datetime dst="true">20121103T165028,36-04</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20121103T155208,32-04</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Jesse Gallagher/O=MTC</name></updatedby>
 <wassignedby><name>CN=Jesse Gallagher/O=MTC</name></wassignedby>
-<item name="$TITLE"><text>messages.xsp</text></item>
 <item name="$Flags"><text>gC~4;</text></item>
+<item name="$TITLE"><text>messages.xsp</text></item>
+
+
+<item name="$DesignerVersion"><text>8.5.2</text></item>
+
+
+
 
 
 <item name="$FileNames" sign="true"><text>messages.xsp</text></item>

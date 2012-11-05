@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="3.0" replicaid="85257AAB00645907" version="8.5" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="1e2" sequence="2" unid="3E796738F653215785257AAB00656633">
+<noteinfo noteid="1e2" sequence="3" unid="3E796738F653215785257AAB00656633">
 <created><datetime dst="true">20121103T142732,99-04</datetime></created>
-<modified><datetime dst="true">20121103T142735,01-04</datetime></modified>
-<revised><datetime dst="true">20121103T142735,00-04</datetime></revised>
-<lastaccessed><datetime dst="true">20121103T142735,00-04</datetime></lastaccessed>
+<modified><datetime dst="true">20121103T142746,70-04</datetime></modified>
+<revised><datetime dst="true">20121103T142746,68-04</datetime></revised>
+<lastaccessed><datetime dst="true">20121103T142746,69-04</datetime></lastaccessed>
 <addedtofile><datetime dst="true">20121103T142733,14-04</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Jesse Gallagher/O=Frost</name></updatedby>
 <wassignedby><name>CN=Jesse Gallagher/O=Frost</name></wassignedby>
-<item name="$TITLE"><text>bootstrap.min.css</text></item>
 <item name="$Flags"><text>D34C=Q</text></item>
 <item name="$FlagsExt"><text>D</text></item>
 
@@ -18,5 +17,6 @@
 
 
 <item name="$FileNames" sign="true"><text>bootstrap.min.css</text></item>
-<item name="$DesignerVersion"><text>8.5.3</text></item>
-<item name="$MimeCharSet"><text>UTF-8</text></item></note>
+<item name="$MimeCharSet"><text>UTF-8</text></item>
+<item name="$TITLE" sign="true"><textlist><text>css/bootstrap.min.css</text></textlist></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item></note>

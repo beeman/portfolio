@@ -1,4 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<xp:link styleClass="brand" value="/" text="Portfolio"/>
+				
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li><xc:link value="/Projects.xsp" text="Projects"/></li>
+						<li><xc:link value="/Resume.xsp" text="Resume"/></li>
+						<li><xc:link value="/Contact.xsp" text="Contact"/></li>
+					</ul>
+<!--					<xe:outline styleClzzass="nav">-->
+<!--						<xe:this.treeNodes>-->
+<!--							<xe:pageTreeNode page="Projects" label="Projects"/>-->
+<!--							<xe:pageTreeNode page="Resume" label="Resume"/>-->
+<!--							<xe:pageTreeNode page="Contact" label="Contact"/>-->
+<!--						</xe:this.treeNodes>-->
+<!--					</xe:outline>-->
+				</div>
+			</div>
+		</div>
+	</div> 
 
+	<div class="container">
+		<header class="jumbotron subhead">
+			<div class="row">
+				<div class="span12">
+					<xp:text value="#{javascript:compositeData.pageTitle ? compositeData.pageTitle : view.pageTitle}" styleClass="" tagName="h2"/>
+				</div>
+			</div>
+		</header>
+	
+		<xc:messages/>
+	
+		<xp:callback/>
+		
+		<footer class="footer">
+			<p>© 2012 Jesse Gallagher</p>
+		</footer>
+	</div>
+	
+	<xp:this.navigationRules>
+		<xp:navigationRule outcome="go-home" viewId="/Projects.xsp"/>
+	</xp:this.navigationRules>
 </xp:view>

@@ -1,4 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" pageTitle="Project" xmlns:xe="http://www.ibm.com/xsp/coreex">
 
+	<xp:this.dataContexts>
+		<xp:dataContext var="pageController" value="${javascript: new frostillicus.controller.BasicDocumentController('doc')}" />
+	</xp:this.dataContexts>
+
+	<xp:this.data>
+		<xp:dominoDocument var="doc" formName="${'Project'}" action="openDocument" computeWithForm="both" />
+	</xp:this.data>
+
+	<xc:layout>
+		<div class="form-horizontal">
+			<div class="control-group">
+				<xp:label styleClass="control-label" for="Name" value="Name" />
+				<div class="controls">
+					<xp:inputText id="Name" value="#{doc.Name}" />
+				</div>
+			</div>
+			<div class="control-group">
+				<xp:label styleClass="control-label" for="Description" value="Description" />
+				<div class="controls">
+					<xp:inputTextarea id="Description" value="#{doc.Description}" rows="5" styleClass="input-xxlarge"/>
+				</div>
+			</div>
+			<div class="control-group">
+				<xp:label styleClass="control-label" for="URL" value="URL" />
+				<div class="controls">
+					<xp:link id="URLLink" value="#{doc.URL}" text="#{doc.URL}" rendered="#{!pageController.editable}"/>
+					<xp:inputText id="URL" value="#{doc.URL}" rendered="#{pageController.editable}" />
+				</div>
+			</div>
+			
+			<xp:div styleClass="control-group" loaded="${pageController.editable}">
+				<xp:label styleClass="control-label" for="Thumbnail" value="Thumbnail" />
+				<div class="controls">
+					<xp:fileUpload id="Thumbnail" value="#{doc.Thumbnail}"/>
+				</div>
+			</xp:div>
+			<xp:div styleClass="control-group" loaded="${pageController.editable}">
+				<xp:label styleClass="control-label" for="Image" value="Image" />
+				<div class="controls">
+					<xp:fileUpload id="Image" value="#{doc.Image}"/>
+				</div>
+			</xp:div>
+		</div>
+
+		<p class="actions">
+			<xp:button id="editDocument" value="Edit" rendered="#{!pageController.editable and database.currentAccessLevel ge 4}">
+				<xp:eventHandler event="onclick" submit="true" refreshMode="complete" immediate="true" disableValidators="true" action="edit-document"/>
+			</xp:button>
+			&#160;
+			<xp:button id="saveDocument" value="Save" rendered="#{pageController.editable}" themeId="Button.Submit">
+				<xp:eventHandler event="onclick" submit="true" refreshMode="complete" immediate="false" action="#{pageController.save}"/>
+			</xp:button>
+			&#160;
+			<xp:button id="cancel" value="Cancel" rendered="#{pageController.editable}">
+				<xp:eventHandler event="onclick" submit="true" refreshMode="complete" immediate="true" action="#{pageController.cancel}" disableValidators="true"/>
+			</xp:button>
+		</p>
+	</xc:layout>
+	
+	<xp:this.navigationRules>
+		<xp:navigationRule outcome="xsp-success" viewId="/Projects.xsp"/>
+		
+		<xp:navigationRule outcome="edit-document" viewId="#{view.pageName}?documentId=#{pageController.documentId}&amp;action=editDocument"/>
+	</xp:this.navigationRules>
 </xp:view>

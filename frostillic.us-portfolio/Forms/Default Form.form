@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE note SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<note class='form' xmlns='http://www.lotus.com/dxl' version='8.5' maintenanceversion='3.0'
- replicaid='85257AAB00645907'>
-<noteinfo noteid='26e' unid='36DD049C7AF78ABF85257AAB006A08C1' sequence='1'>
-<created><datetime dst='true'>20121103T151810,57-04</datetime></created>
-<modified><datetime dst='true'>20121103T151810,69-04</datetime></modified>
-<revised><datetime dst='true'>20121103T151810,68-04</datetime></revised>
-<lastaccessed><datetime dst='true'>20121103T151810,68-04</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20121103T151810,68-04</datetime></addedtofile></noteinfo>
+<note default='true' class='form' xmlns='http://www.lotus.com/dxl' version='8.5'
+ maintenanceversion='3.0' replicaid='85257AAB00645907'>
+<noteinfo noteid='2de' unid='166816E09FFA5A1185257AAB006D5B7B' sequence='2'>
+<created><datetime dst='true'>20121103T155428,43-04</datetime></created>
+<modified><datetime dst='true'>20121103T155435,02-04</datetime></modified>
+<revised><datetime dst='true'>20121103T155435,00-04</datetime></revised>
+<lastaccessed><datetime dst='true'>20121103T155435,00-04</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20121103T155428,52-04</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Jesse Gallagher/O=MTC</name></updatedby>
 <wassignedby><name>CN=Jesse Gallagher/O=MTC</name></wassignedby>
 <item name='OriginalModTime'><datetime dst='true'>20070722T175045,51-04</datetime></item>
@@ -22,7 +22,7 @@ hhgBAIAAAAAAgAAAAQABAP///wAQAAAA
 </rawitemdata></item>
 <item name='$WindowTitle' sign='true'><formula>Form</formula></item>
 <item name='$Flags'><text>CDw</text></item>
-<item name='$DesignerVersion'><text>8.5.2</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
 <item name='$$Script_O' sign='true'>
 <rawitemdata type='14'>
 AQAAAkxTT0IDABQIZW4AAAQAAAADAAAAAAAEAIgAAAAAAAAAAAAAAAAAAAAkAP//GAAAAP////9U

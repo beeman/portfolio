@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom"
+	pageTitle="Resume">
+
+	<xc:layout>
+		<table>
+			<tr>
+				<td style="padding-right: 1em"><xp:link value="/resume.pdf"><xp:image url="/Adobe_PDF_Icon.png"/></xp:link></td>
+				<td><xp:link value="/resume.pdf" text="PDF Version"/></td>
+			</tr>
+		</table>
+	</xc:layout>
+</xp:view>
