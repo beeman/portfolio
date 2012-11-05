@@ -11,10 +11,25 @@ public class ProjectManager implements Serializable {
 	public static final String DEFAULT_IMAGE = "/icons/vwicn999.gif";
 
 	private List<Project> projects;
+	private Date lastUpdated = null;
 
 	@SuppressWarnings("unchecked")
 	public Collection<Project> getProjects() throws NotesException {
-		if(this.projects == null) {
+		boolean needsReset = this.projects == null;
+		if(!needsReset) {
+			// Check to see if the DB has changed. Getting the last modified date is surprisingly cheap
+			Database database = ExtLibUtil.getCurrentDatabase();
+			try {
+				DateTime dt = database.getLastModified();
+				Date databaseModified = dt.toJavaDate();
+				dt.recycle();
+				if(databaseModified.after(this.lastUpdated)) {
+					needsReset = true;
+				}
+			} catch(NotesException ne) { }
+		}
+
+		if(needsReset) {
 			this.projects = new ArrayList<Project>();
 
 			Database database = ExtLibUtil.getCurrentDatabase();
@@ -54,6 +69,7 @@ public class ProjectManager implements Serializable {
 
 			projectsView.recycle();
 
+			this.lastUpdated = new Date();
 		}
 		return this.projects;
 	}
