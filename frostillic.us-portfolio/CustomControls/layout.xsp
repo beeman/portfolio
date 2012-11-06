@@ -3,6 +3,11 @@
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
 				<xc:link styleClass="brand" value="/" text="Jesse Gallagher"/>
 				
 				<div class="nav-collapse">
@@ -25,14 +30,22 @@
 			</div>
 		</header>
 	
-		<xc:messages/>
-	
-		<xp:callback/>
+		<div class="row">
+			<div class="span10 offset1">
+				<xc:messages/>
+			
+				<xp:callback/>
+			</div>
+		</div>
 		
-		<footer class="footer">
-			<p class="pull-right"><xc:link value="https://github.com/jesse-gallagher/portfolio/blob/master/frostillic.us-portfolio/XPages#{view.pageName}" text="View page on GitHub"/></p>
-			<p>© 2012 Jesse Gallagher</p>
-		</footer>
+		<div class="row">
+			<div class="span12">
+				<footer class="footer">
+					<p class="pull-right"><xc:link value="https://github.com/jesse-gallagher/portfolio/blob/master/frostillic.us-portfolio/XPages#{view.pageName}" text="View page on GitHub"/></p>
+					<p>© 2012 Jesse Gallagher</p>
+				</footer>
+			</div>
+		</div>
 	</div>
 	
 	<xp:this.navigationRules>

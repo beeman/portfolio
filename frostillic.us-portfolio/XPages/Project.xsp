@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" pageTitle="Project" xmlns:xe="http://www.ibm.com/xsp/coreex">
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" xmlns:xe="http://www.ibm.com/xsp/coreex"
+	pageTitle="Project">
 
 	<xp:this.dataContexts>
 		<xp:dataContext var="pageController" value="${javascript: new frostillicus.controller.BasicDocumentController('doc')}" />
@@ -10,48 +11,58 @@
 		<xp:dominoDocument var="doc" formName="${'Project'}" action="openDocument" computeWithForm="both" />
 	</xp:this.data>
 
-	<xc:layout pageTitle="${pageController.newNote ? 'Project' : project.name}">
+	<xc:layout pageTitle="#{javascript:pageController.newNote ? 'Project' : doc.getValue('Name')}">
 		<div class="project-page">
-			<xp:image rendered="#{project.image != ''}" loaded="${!pageController.newNote}"
-				url="#{project.image}" styleClass="thumbnail banner"/>
-		
-			<div class="form-horizontal">
-				<xc:bsControlGroup label="Name" loaded="${pageController.editable}">
-					<xp:inputText id="Name" value="#{doc.Name}"/>
-				</xc:bsControlGroup>
-				<xc:bsControlGroup label="Description">
-					<xp:inputTextarea id="Description" value="#{doc.Description}" rows="5" styleClass="input-xxlarge"/>
-				</xc:bsControlGroup>
-				<xc:bsControlGroup label="URL">
-					<xp:inputTextarea id="URL" value="#{doc.URL}" rendered="#{pageController.editable}" multipleSeparator="${javascript:'\n'}"
-						rows="5" styleClass="input-xxlarge"/>
-					<xp:repeat rendered="#{!pageController.editable}" value="#{project.url}" var="projectUrl">
-						<xc:link id="URLLink" value="#{projectUrl}" text="#{projectUrl}" />
-					</xp:repeat>
-				</xc:bsControlGroup>
-				<xc:bsControlGroup label="Thumbnail" loaded="${pageController.editable}">
-					<xp:fileUpload id="Thumbnail" value="#{doc.Thumbnail}"/>
-					<xp:fileDownload id="ThumbnailDownload" value="#{doc.Thumbnail}"/>
-				</xc:bsControlGroup>
-				<xc:bsControlGroup label="Image" loaded="${pageController.editable}">
-					<xp:fileUpload id="Image" value="#{doc.Image}"/>
-					<xp:fileDownload id="ImageDownload" value="#{doc.Image}"/>
-				</xc:bsControlGroup>
-			</div>
-	
-			<p class="actions">
-				<xp:button id="editDocument" value="Edit" rendered="#{!pageController.editable and database.currentAccessLevel ge 4}">
-					<xp:eventHandler event="onclick" submit="true" refreshMode="complete" immediate="true" disableValidators="true" action="edit-document"/>
-				</xp:button>
-				&#160;
-				<xp:button id="saveDocument" value="Save" rendered="#{pageController.editable}" themeId="Button.Submit">
-					<xp:eventHandler event="onclick" submit="true" refreshMode="complete" immediate="false" action="#{pageController.save}"/>
-				</xp:button>
-				&#160;
-				<xp:button id="cancel" value="Cancel" rendered="#{pageController.editable}">
-					<xp:eventHandler event="onclick" submit="true" refreshMode="complete" immediate="true" action="#{pageController.cancel}" disableValidators="true"/>
-				</xp:button>
-			</p>
+			<xp:div loaded="${pageController.editable}">
+				<div class="form-horizontal">
+					<xc:bsControlGroup label="Name" loaded="${pageController.editable}">
+						<xp:inputText id="Name" value="#{doc.Name}"/>
+					</xc:bsControlGroup>
+					<xc:bsControlGroup label="Description">
+						<xp:inputTextarea id="Description" value="#{doc.Description}" rows="5" styleClass="input-xxlarge"/>
+					</xc:bsControlGroup>
+					<xc:bsControlGroup label="URLs">
+						<xp:inputTextarea id="URL" value="#{doc.URL}" rendered="#{pageController.editable}" multipleSeparator="${javascript:'\n'}"
+							rows="5" styleClass="input-xxlarge"/>
+					</xc:bsControlGroup>
+					<xc:bsControlGroup label="Thumbnail" loaded="${pageController.editable}">
+						<xp:fileUpload id="Thumbnail" value="#{doc.Thumbnail}"/>
+						<xp:fileDownload id="ThumbnailDownload" value="#{doc.Thumbnail}" rendered="#{!pageController.newNote}"/>
+					</xc:bsControlGroup>
+					<xc:bsControlGroup label="Image" loaded="${pageController.editable}">
+						<xp:fileUpload id="Image" value="#{doc.Image}"/>
+						<xp:fileDownload id="ImageDownload" value="#{doc.Image}" rendered="#{!pageController.newNote}" allowDelete="true" />
+					</xc:bsControlGroup>
+				</div>
+				
+				<p class="actions">
+					<xp:button id="button2" value="Save" rendered="#{pageController.editable}" themeId="Button.Submit">
+						<xp:eventHandler event="onclick" submit="true" refreshMode="complete" immediate="false" action="#{pageController.save}"/>
+					</xp:button>
+					&#160;
+					<xp:button id="button3" value="Cancel" rendered="#{pageController.editable}">
+						<xp:eventHandler event="onclick" submit="true" refreshMode="complete" immediate="true" action="#{pageController.cancel}" disableValidators="true"/>
+					</xp:button>
+				</p>
+			</xp:div>
+			<xp:div loaded="${!pageController.editable}">
+				<xp:image rendered="#{project.image != ''}" loaded="${!pageController.newNote}"
+					url="#{project.image}" styleClass="thumbnail banner"/>
+					
+				<h4>Description</h4>
+				<xp:text tagName="p" value="#{project.description}"/>
+				
+				<h4>URLs</h4>
+				<xp:repeat rendered="#{!pageController.editable}" value="#{project.url}" var="projectUrl" styleClass="urls">
+					<xc:link id="URLLink" value="#{projectUrl}" text="#{projectUrl}" />
+				</xp:repeat>
+				
+				<p class="actions">
+					<xp:button id="editDocument" value="Edit" rendered="#{!pageController.editable and database.currentAccessLevel ge 4}">
+						<xp:eventHandler event="onclick" submit="true" refreshMode="complete" immediate="true" disableValidators="true" action="edit-document"/>
+					</xp:button>
+				</p>
+			</xp:div>
 		</div>
 	</xc:layout>
 	

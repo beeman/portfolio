@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" pageTitle="Projects">
 	<xc:layout pageTitle="Projects">
 		<xp:repeat value="${ProjectManager.projects}" var="project" rows="1000">
 			<div class="media project">
@@ -13,7 +13,7 @@
 			</div>
 		</xp:repeat>
 		
-		<xp:panel tagName="p" loaded="${database.currentAccessLevel gt 3}" style="clear: left">
+		<xp:panel tagName="p" loaded="${database.currentAccessLevel gt 3}" style="clear: left" styleClass="actions">
 			<xc:link text="New Project" value="/Project.xsp"/>
 		</xp:panel>
 	</xc:layout>

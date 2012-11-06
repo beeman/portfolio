@@ -2,7 +2,7 @@
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom"
 	pageTitle="Resume">
 
-	<xc:layout>
+	<xc:layout pageTitle="Resume">
 		<div class="resume">
 			<h3>Jesse Gallagher</h3>
 			<p>200 South Line Street, Unit 151, Lansdale, PA 19446 <span class="dot">•</span> 610-804-8550 <span class="dot">•</span> jesse@secondfoundation.org</p>

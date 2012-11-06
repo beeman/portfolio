@@ -9,7 +9,7 @@
 		<xp:dominoDocument var="doc" formName="${'Contact Method'}" action="openDocument" computeWithForm="both" />
 	</xp:this.data>
 
-	<xc:layout>
+	<xc:layout pageTitle="Contact Method">
 		<div class="form-horizontal">
 			<xc:bsControlGroup label="Index" rendered="#{pageController.editable}">
 				<xp:inputText id="Index" value="#{doc.Index}" styleClass="input-xsmall">

@@ -11,9 +11,9 @@
 			<name>pageIcon</name>
 			<value>/$Icon</value>
 		</property>
-		<property>
+		<property mode="concat">
 			<name>pageTitle</name>
-			<value>Portfolio</value>
+			<value> :: Jesse Gallagher</value>
 		</property>
 	</control>
 </theme>

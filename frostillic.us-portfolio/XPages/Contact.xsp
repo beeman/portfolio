@@ -6,7 +6,7 @@
 		<xp:dominoView var="contactMethods" ignoreRequestParams="true" viewName="Contact Methods"/>
 	</xp:this.data>
 
-	<xc:layout>
+	<xc:layout pageTitle="Contact">
 		<xp:repeat value="#{contactMethods}" var="method" rows="1000">
 			<xp:this.facets>
 				<xp:text xp:key="header" disableTheme="true" escape="false" value="&lt;ul class='contact'&gt;"/>
