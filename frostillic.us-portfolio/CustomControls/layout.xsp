@@ -3,7 +3,7 @@
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<xp:link styleClass="brand" value="/" text="Portfolio"/>
+				<xc:link styleClass="brand" value="/" text="Jesse Gallagher"/>
 				
 				<div class="nav-collapse">
 					<ul class="nav">

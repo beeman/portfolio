@@ -8,9 +8,10 @@ import lotus.domino.*;
 public class ProjectManager implements Serializable {
 	private static final long serialVersionUID = 1L;
 	public static final String DEFAULT_THUMBNAIL = "/tango/package-x-generic.svg";
-	public static final String DEFAULT_IMAGE = "/icons/vwicn999.gif";
+	public static final String DEFAULT_IMAGE = "";
 
 	private Set<Project> projects;
+	private Map<String, Project> projectMap;
 	private Date lastUpdated = null;
 
 	@SuppressWarnings("unchecked")
@@ -31,6 +32,7 @@ public class ProjectManager implements Serializable {
 
 		if(needsReset) {
 			this.projects = new TreeSet<Project>();
+			this.projectMap = new HashMap<String, Project>();
 
 			Database database = ExtLibUtil.getCurrentDatabase();
 			View projectsView = database.getView("Projects");
@@ -42,7 +44,7 @@ public class ProjectManager implements Serializable {
 				project.setShortName(projectDoc.getItemValueString("ShortName"));
 				project.setName(projectDoc.getItemValueString("Name"));
 				project.setDescription(projectDoc.getItemValueString("Description"));
-				project.setUrl(projectDoc.getItemValueString("URL"));
+				project.setUrl((List<String>)projectDoc.getItemValue("URL"));
 
 				if(projectDoc.hasItem("Thumbnail")) {
 					RichTextItem thumbnailItem = (RichTextItem)projectDoc.getFirstItem("Thumbnail");
@@ -58,9 +60,22 @@ public class ProjectManager implements Serializable {
 					project.setThumbnailImage(DEFAULT_THUMBNAIL);
 				}
 
-				project.setImage(DEFAULT_IMAGE);
+				if(projectDoc.hasItem("Image")) {
+					RichTextItem thumbnailItem = (RichTextItem)projectDoc.getFirstItem("Image");
+					List<EmbeddedObject> objects = thumbnailItem.getEmbeddedObjects();
+					if(objects.size() > 0) {
+						EmbeddedObject attachment = objects.get(0);
+						project.setImage("/0/" + projectDoc.getUniversalID() + "/$FILE/" + attachment.getSource());
+					} else {
+						project.setImage(DEFAULT_IMAGE);
+					}
+					thumbnailItem.recycle();
+				} else {
+					project.setImage(DEFAULT_IMAGE);
+				}
 
 				this.projects.add(project);
+				this.projectMap.put(projectDoc.getUniversalID(), project);
 
 				Document tempDoc = projectDoc;
 				projectDoc = projectsView.getNextDocument(projectDoc);
@@ -72,6 +87,11 @@ public class ProjectManager implements Serializable {
 			this.lastUpdated = new Date();
 		}
 		return this.projects;
+	}
+
+	public Map<String, Project> getProjectsById() throws NotesException {
+		this.getProjects();
+		return this.projectMap;
 	}
 
 }

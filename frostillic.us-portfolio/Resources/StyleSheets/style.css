@@ -18,3 +18,10 @@ footer {
 }
 
 .clear { clear: both }
+
+
+.project-page .banner {
+	width: 100%;
+	max-width: 1000px;
+	margin: 2em auto;
+}

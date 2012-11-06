@@ -26,11 +26,14 @@ public abstract class AbstractDocumentController implements XPageController {
 	public String getDocumentId() {
 		return this.getDominoDocument().getDocumentId();
 	}
+	public boolean isNewNote() throws NotesException {
+		return this.getDominoDocument().isNewNote();
+	}
 
 	public String save() throws NotesException {
 		DominoDocument dominoDocument = this.getDominoDocument();
 
-		boolean isNewNote = dominoDocument.isNewNote();
+		boolean isNewNote = this.isNewNote();
 		dominoDocument.save();
 
 		Util.addConfirmationMessage(isNewNote ? dominoDocument.getValue("Form") + " submitted." : dominoDocument.getValue("Form") + " updated.");
