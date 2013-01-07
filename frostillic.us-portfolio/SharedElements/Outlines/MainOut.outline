@@ -1,15 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE note SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<note class='filter' xmlns='http://www.lotus.com/dxl' version='8.5' maintenanceversion='3.0'
- replicaid='85257AAB00645907'>
-<noteinfo noteid='382' unid='E7223218E6051CC085257AAD004BF067' sequence='2'>
+<note class='filter' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='85257AAB00645907'>
+<noteinfo noteid='382' unid='E7223218E6051CC085257AAD004BF067' sequence='3'>
 <created><datetime>20121105T084927,43-05</datetime></created>
-<modified><datetime>20121105T085550,15-05</datetime></modified>
-<revised><datetime>20121105T085550,12-05</datetime></revised>
-<lastaccessed><datetime>20121105T085550,13-05</datetime></lastaccessed>
+<modified><datetime>20121216T215645,57-05</datetime></modified>
+<revised><datetime>20121216T215330,31-05</datetime></revised>
+<lastaccessed><datetime>20121216T215645,56-05</datetime></lastaccessed>
 <addedtofile><datetime>20121105T084927,53-05</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Jesse Gallagher/O=MTC</name></updatedby>
-<wassignedby><name>CN=Jesse Gallagher/O=MTC</name></wassignedby>
+<updatedby><name>CN=Jesse Gallagher/O=MTC</name><name>CN=Jesse Gallagher/O=Frost</name></updatedby>
+<wassignedby><name>CN=Jesse Gallagher/O=Frost</name></wassignedby>
 <item name='$POID'><datetime dst='true'>20080313T103820,40-04</datetime></item>
 <item name='$SiteMapList' sign='true'>
 <rawitemdata type='1a'>

@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="3.0" replicaid="85257AAB00645907" version="8.5" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="362" sequence="18" unid="16687D57196DA48885257AAC007A777E">
+<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="85257AAB00645907" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="362" sequence="19" unid="16687D57196DA48885257AAC007A777E">
 <created><datetime>20121104T171739,82-05</datetime></created>
-<modified><datetime>20121104T175301,69-05</datetime></modified>
-<revised><datetime>20121104T175301,67-05</datetime></revised>
-<lastaccessed><datetime>20121104T175301,67-05</datetime></lastaccessed>
+<modified><datetime>20121216T215650,50-05</datetime></modified>
+<revised><datetime>20121216T215328,64-05</datetime></revised>
+<lastaccessed><datetime>20121216T215650,49-05</datetime></lastaccessed>
 <addedtofile><datetime>20121104T171739,85-05</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Jesse Gallagher/O=MTC</name></updatedby>
-<wassignedby><name>CN=Jesse Gallagher/O=MTC</name></wassignedby>
+<updatedby><name>CN=Jesse Gallagher/O=MTC</name><name>CN=Jesse Gallagher/O=Frost</name></updatedby>
+<wassignedby><name>CN=Jesse Gallagher/O=Frost</name></wassignedby>
 <item name="$Flags"><text>34567Cg~[</text></item>
 <item name="$TITLE"><text>frostillicus/portfolio/AliasManager.java</text></item>
 

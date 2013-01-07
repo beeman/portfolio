@@ -16,6 +16,7 @@ public class ProjectManager implements Serializable {
 
 	@SuppressWarnings("unchecked")
 	public Collection<Project> getProjects() throws NotesException {
+
 		boolean needsReset = this.projects == null;
 		if(!needsReset) {
 			// Check to see if the DB has changed. Getting the last modified date is surprisingly cheap

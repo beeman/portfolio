@@ -1,15 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE note SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<note class='view' xmlns='http://www.lotus.com/dxl' version='8.5' maintenanceversion='3.0'
- replicaid='85257AAB00645907'>
-<noteinfo noteid='3c2' unid='5329610A765E27CF85257AAD00535C9A' sequence='3'>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='85257AAB00645907'>
+<noteinfo noteid='3c2' unid='5329610A765E27CF85257AAD00535C9A' sequence='4'>
 <created><datetime>20121105T101031,94-05</datetime></created>
-<modified><datetime>20121105T101214,71-05</datetime></modified>
-<revised><datetime>20121105T101214,70-05</datetime></revised>
-<lastaccessed><datetime>20121105T101214,70-05</datetime></lastaccessed>
+<modified><datetime>20121216T215646,32-05</datetime></modified>
+<revised><datetime>20121216T215331,67-05</datetime></revised>
+<lastaccessed><datetime>20121216T215646,31-05</datetime></lastaccessed>
 <addedtofile><datetime>20121105T101032,01-05</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Jesse Gallagher/O=MTC</name></updatedby>
-<wassignedby><name>CN=Jesse Gallagher/O=MTC</name></wassignedby>
+<updatedby><name>CN=Jesse Gallagher/O=MTC</name><name>CN=Jesse Gallagher/O=Frost</name></updatedby>
+<wassignedby><name>CN=Jesse Gallagher/O=Frost</name></wassignedby>
 <item name='$FormatNote' summary='true'>
 <rawitemdata type='4'>
 AQBvCJclHdulowKLbQCreiWF

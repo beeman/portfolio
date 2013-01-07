@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="3.0" replicaid="85257AAB00645907" version="8.5" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="32e" sequence="45" unid="A322715BF883591A85257AAB007DCF7A">
+<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="85257AAB00645907" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="32e" sequence="87" unid="A322715BF883591A85257AAB007DCF7A">
 <created><datetime dst="true">20121103T185411,14-04</datetime></created>
-<modified><datetime dst="true">20121103T192455,62-04</datetime></modified>
-<revised><datetime dst="true">20121103T192455,60-04</datetime></revised>
-<lastaccessed><datetime dst="true">20121103T192455,60-04</datetime></lastaccessed>
+<modified><datetime>20121216T215658,53-05</datetime></modified>
+<revised><datetime>20121216T215326,39-05</datetime></revised>
+<lastaccessed><datetime>20121216T215658,52-05</datetime></lastaccessed>
 <addedtofile><datetime dst="true">20121103T185411,17-04</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Jesse Gallagher/O=MTC</name></updatedby>
-<wassignedby><name>CN=Jesse Gallagher/O=MTC</name></wassignedby>
+<updatedby><name>CN=Jesse Gallagher/O=MTC</name><name>CN=Jesse Gallagher/O=Frost</name></updatedby>
+<wassignedby><name>CN=Jesse Gallagher/O=Frost</name></wassignedby>
 <item name="$Flags"><text>34567Cg~[</text></item>
 <item name="$TITLE"><text>frostillicus/portfolio/ProjectManager.java</text></item>
 

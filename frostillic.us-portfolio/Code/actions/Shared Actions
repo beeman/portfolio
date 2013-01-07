@@ -1,15 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE note SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<note class='form' xmlns='http://www.lotus.com/dxl' version='8.5' maintenanceversion='3.0'
- replicaid='85257AAB00645907'>
-<noteinfo noteid='386' unid='BB100B645B796B3D85257AAD004BF33E' sequence='4'>
+<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='85257AAB00645907'>
+<noteinfo noteid='386' unid='BB100B645B796B3D85257AAD004BF33E' sequence='5'>
 <created><datetime>20121105T084934,70-05</datetime></created>
-<modified><datetime>20121105T085616,00-05</datetime></modified>
-<revised><datetime>20121105T085615,98-05</datetime></revised>
-<lastaccessed><datetime>20121105T085615,98-05</datetime></lastaccessed>
+<modified><datetime>20121216T215659,62-05</datetime></modified>
+<revised><datetime>20121216T215329,27-05</datetime></revised>
+<lastaccessed><datetime>20121216T215659,61-05</datetime></lastaccessed>
 <addedtofile><datetime>20121105T084934,74-05</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Jesse Gallagher/O=MTC</name></updatedby>
-<wassignedby><name>CN=Jesse Gallagher/O=MTC</name></wassignedby>
+<updatedby><name>CN=Jesse Gallagher/O=MTC</name><name>CN=Jesse Gallagher/O=Frost</name></updatedby>
+<wassignedby><name>CN=Jesse Gallagher/O=Frost</name></wassignedby>
 <item name='$Flags'><text>34yQC</text></item>
 <item name='$TITLE'><text>$ACTIONS</text></item>
 <item name='$Body' sign='true' seal='true'>

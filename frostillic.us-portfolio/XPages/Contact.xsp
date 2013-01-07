@@ -18,7 +18,7 @@
 					<xp:text styleClass="" tagName="strong" value="#{method.Name}"/>
 					<br /><xc:link value="#{method.URL}" text="#{method.Text}"/>
 					<xp:panel tagName="p" loaded="${database.currentAccessLevel gt 3}">
-						<small><xc:link text="Edit" value="/0/#{javascript:method.getUniversalID()}?Edit"/></small>
+						<small><xc:link text="Edit" value="/$$OpenDominoDocument.xsp?action=editDocument&amp;documentId=#{method.id}"/></small>
 					</xp:panel>
 				</address>
 			</li>

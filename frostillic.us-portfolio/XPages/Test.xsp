@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom"
+	pageTitle="Testbed" xmlns:xe="http://www.ibm.com/xsp/coreex">
+
+	<xc:layout pageTitle="Testbed">
+		<xe:widgetContainer titleBarText="test widget" type="standard" id="testWidget">
+			widget contents
+		</xe:widgetContainer>
+		
+		<xe:dumpObject value="#{javascript:getComponent('testWidget')}"/>
+		
+		<xp:text value="#{javascript:0.1 + 0.2}"/>
+	</xc:layout>
+</xp:view>

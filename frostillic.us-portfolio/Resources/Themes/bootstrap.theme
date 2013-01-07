@@ -40,4 +40,14 @@
 			<value></value>
 		</property>
 	</control>
+	
+	
+	<!-- xe:widgetContainer -->
+	<control>
+		<name>Container.Widget</name>
+		<property>
+			<name>style</name>
+			<value></value>
+		</property>
+	</control>
 </theme>

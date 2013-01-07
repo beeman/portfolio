@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="3.0" replicaid="85257AAB00645907" version="8.5" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="1ea" sequence="3" unid="73077ED3214709E685257AAB0065664A">
+<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="85257AAB00645907" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="1ea" sequence="4" unid="73077ED3214709E685257AAB0065664A">
 <created><datetime dst="true">20121103T142733,22-04</datetime></created>
-<modified><datetime dst="true">20121103T142811,26-04</datetime></modified>
-<revised><datetime dst="true">20121103T142811,24-04</datetime></revised>
-<lastaccessed><datetime dst="true">20121103T142811,24-04</datetime></lastaccessed>
+<modified><datetime>20121216T215656,79-05</datetime></modified>
+<revised><datetime>20121216T215319,51-05</datetime></revised>
+<lastaccessed><datetime>20121216T215656,78-05</datetime></lastaccessed>
 <addedtofile><datetime dst="true">20121103T142733,32-04</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Jesse Gallagher/O=Frost</name></updatedby>
 <wassignedby><name>CN=Jesse Gallagher/O=Frost</name></wassignedby>
@@ -14,5 +14,5 @@
 
 <item name="$FileNames" sign="true"><text>bootstrap-responsive.min.css</text></item>
 <item name="$MimeCharSet"><text>UTF-8</text></item>
-<item name="$TITLE" sign="true"><textlist><text>css/bootstrap-responsive.min.css</text></textlist></item>
+<item name="$TITLE" sign="true"><text>css/bootstrap-responsive.min.css</text></item>
 <item name="$DesignerVersion"><text>8.5.3</text></item></note>
