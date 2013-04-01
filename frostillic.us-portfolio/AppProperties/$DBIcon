@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='85257AAB00645907'>
+<noteinfo noteid='2fa' unid='D21893D1D09F9A5485257AAB00708551' sequence='2'>
+<created><datetime dst='true'>20121103T162901,61-04</datetime></created>
+<modified><datetime>20130110T145700,10-05</datetime></modified>
+<revised><datetime>20121216T215326,54-05</datetime></revised>
+<lastaccessed><datetime>20130110T145700,09-05</datetime></lastaccessed>
+<addedtofile><datetime>20130110T145700,09-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Jesse Gallagher/O=MTC</name><name>CN=Jesse Gallagher/O=Frost</name></updatedby>
+<wassignedby><name>CN=Jesse Gallagher/O=Frost</name></wassignedby>
+<item name='$TITLE'><text>$DBIcon</text></item>
+<item name='$Flags'><text>34Ci~Q</text></item>
+<item name='$ImagesWide' sign='true'><number>1</number></item>
+<item name='$ImagesHigh' sign='true'><number>1</number></item>
+<item name='$ImagesColorize' sign='true'><number>0</number></item>
+<item name='$FileSize' sign='true'><number>1176</number></item>
+<item name='$ImageData' sign='true'>
+<rawitemdata type='1'>
+mQAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAH0AHAAAAAIAAAAAAJgEAAABAAAAAQAAAAAAAAB8
+AKIEAACYBJgEiVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhk
+iAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vu
+PBoAAAQVSURBVFiF7Zc9bxxFGMd/M7t3e6/2OZEwCQVWlMIfAAkFIVNulYIaiQJaOj5AJD5ASoRE
+hWihQ0inQBfJigKK0kXCxsQoFsb3unfel5mdGYp7yTp3jhNyUij4S492dnb3eX7zPDOzuyIMQ16n
+5GuN/l8A8AFu3LjhK6V+Nsa8d9EDQojcWvv5w4cPv1wZQJqmW5VK5Z2bN2/6SZLgnAPAWgswP5+2
+/Tt37tze3t7+/tGjR8crAVBKZdVq1R0dHdHpdHDOLTUAIQSbm5v5wcHBR8DtlQBordMsy8SlSxsY
+Y7DWnglczIQQgmq1Wj88PPxie3v71qx/mZxz2lr78d7e3o/PBQCyLMu8TqdLp9OZA8yOsyDFQFtb
+W/VGo0Gz2UQIgRACACnlvB1FEffu3bsFPB/g8uXLab/f9zY2WmitFwCWlWKmOI4B5hBFi+MYY0zt
+vOBzgN3dXXXt2jXZ6/XmGQCWgsyyUdRsxMXgUsoZQOVCAABjjG0212SaZtw/tNzdPxvkvDo/qxnM
+5JkWzl25ztsf6OI9nie+Xf/9m0/OADjndLfb9bvdLo87DT798F2uv7VRcDY9Pi/6EshpzzzOk86Y
+r767//7svJgB3WjUq1pr1B+SZrXM/t9jojifjGzpaM8jEQtNATQqPirTCEFndnm+FRtjdL8/oNvt
+EmeWerWENZMb5NTBs4Y7z9xTsxOz1pFkhjTLwYn5BlYsQVapBLRaLTIjqAUlrFN4cjWvi3GaU2/6
+jIY51ronCwB5nqsoGtHvD9DmDaqBj3MOT56b5xeTg1Gq0bkl8CVxqq0x+dECgDEmK5dLVJsbrNXK
+OEAKsbz4LyjjHKNUk1uH5wmCssdpkikhxMkCgLU2G43GHA8U6/VL6Ny+0ugzbYkzA07gT/2UPcno
+VOWCp5OwmIHU9328IKBJmUzZC4NM5pjDusk+YezEVG6XrUicg8EotblziwDW2mQ8HtMZ+FRaZaJE
+k+npSwjIjUUbh84tuZluyy+ZlUQZhuPEE9JbWoJUCIEMGpRKPqNEEyWaVBmUti8dbJniLOc00T7n
+lCCO41N6UYVKDR6fxAxjvdTRv5EAhrFCGVP69epeL3z8DIC1NgaB9WtkuSWKNUpfPA9eVFIKToYJ
+Usg43N2dOz4zB5IkIUoMV68EVAOPoLy6b1YpBGmqkFIMi/3FEiQAmhLrVY96aRVVfyrnHP0kQVg7
+WABot9tiZ2fHRLFicOr482SI7L7iDrhEx8dDmyTDB7vtdi0Mw3gOAHhRFP30y6H4TK3j/7b/yh+7
+Z+TAAlidHhw/+OHr4jUx+zVrt9vNYG3tzVrQ2nQ4KYVcyRLIjTEqS2u5EHk+OukBf4Vh2FsAmEJI
+IGCSmXwVAFMFQAqoMAzPLC3x/8/p6wb4B7wypZfLCDcrAAAAAElFTkSuQmCC
+</rawitemdata></item>
+<item name='$FileModDT' sign='true'><datetime>20080103T130822,00-05</datetime></item>
+<item name='$ImageNames' sign='true'><text>Y:\Pictures\tango-icon-theme-0.8.90\32x32\places\folder.png</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item></note>
+

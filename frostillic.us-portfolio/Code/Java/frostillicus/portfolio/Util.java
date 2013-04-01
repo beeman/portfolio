@@ -7,12 +7,13 @@ import java.io.*;
 import java.lang.reflect.Method;
 import javax.faces.context.FacesContext;
 import com.ibm.xsp.extlib.util.ExtLibUtil;
-import lotus.domino.*;
+import org.openntf.domino.*;
+import org.openntf.domino.utils.XSPUtil;
 import lotus.domino.local.NotesBase;
 
 public abstract class Util {
 	// Via http://stackoverflow.com/questions/12740889/what-is-the-least-expensive-way-to-test-if-a-view-has-been-recycled
-	public static boolean isRecycled(Base object) {
+	public static boolean isRecycled(lotus.domino.Base object) {
 		if(!(object instanceof NotesBase)) {
 			// No reason to test non-NotesBase objects -> isRecycled = true
 			return true;
@@ -41,7 +42,7 @@ public abstract class Util {
 	}
 
 	public static Serializable restoreState(Document doc, String itemName) throws Exception {
-		Session session = ExtLibUtil.getCurrentSession();
+		Session session = XSPUtil.getCurrentSession();
 		boolean convertMime = session.isConvertMime();
 		session.setConvertMime(false);
 
@@ -73,9 +74,9 @@ public abstract class Util {
 
 		return result;
 	}
-	public static void saveState(Serializable object, Document doc, String itemName) throws NotesException {
+	public static void saveState(Serializable object, Document doc, String itemName) {
 		try {
-			Session session = ExtLibUtil.getCurrentSession();
+			Session session = XSPUtil.getCurrentSession();
 
 			boolean convertMime = session.isConvertMime();
 			session.setConvertMime(false);
@@ -102,10 +103,6 @@ public abstract class Util {
 			MIMEHeader header = entity.getNthHeader("Content-Encoding");
 			if(header == null) { header = entity.createHeader("Content-Encoding"); }
 			header.setHeaderVal("gzip");
-
-			header.recycle();
-			entity.recycle();
-			mimeStream.recycle();
 
 			session.setConvertMime(convertMime);
 		} catch (IOException e) {

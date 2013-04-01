@@ -1,15 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE note SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<note default='true' class='icon' xmlns='http://www.lotus.com/dxl' version='8.5'
- maintenanceversion='3.0' replicaid='85257AAB00645907'>
-<noteinfo noteid='11a' unid='B83B02AEE0186948852577EF006863FB' sequence='11'>
+<note default='true' class='icon' xmlns='http://www.lotus.com/dxl' version='9.0'
+ replicaid='85257AAB00645907'>
+<noteinfo noteid='12e' unid='B83B02AEE0186948852577EF006863FB' sequence='4'>
 <created><datetime>20101204T140013,39-05</datetime></created>
-<modified><datetime dst='true'>20121103T163400,04-04</datetime></modified>
-<revised><datetime dst='true'>20121103T163400,02-04</datetime></revised>
-<lastaccessed><datetime dst='true'>20121103T163400,02-04</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20121103T141604,49-04</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Jesse Gallagher/O=MTC</name><name>CN=Jesse Gallagher/O=Frost</name><name
->CN=Jesse Gallagher/O=MTC</name></updatedby>
+<modified><datetime>20130309T184124,42-05</datetime></modified>
+<revised><datetime>20130309T184124,40-05</datetime></revised>
+<lastaccessed><datetime>20130309T184124,40-05</datetime></lastaccessed>
+<addedtofile><datetime>20130110T145657,81-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Jesse Gallagher/O=Frost</name></updatedby>
 <item name='IconBitmap' summary='true'>
 <rawitemdata type='6'>
 AiAgAQAA///////wD///gAH//gAAf/wAAD/4AAAf8AAAD+AAAAfgAAAHwAAAA8AAAAPAAAADgAAA
@@ -25,13 +23,13 @@ L2ZvgAAACMZmZmZmZmZmZmZmbIAAAACMZmZmZmZmZmZmZsgAAAAACMZmZmZmZmZmZmyAAAAAAACM
 9mZmZmZmZm/IAAAAAAAACIz2ZmZmZm/IgAAAAAAAAAAIiMZmZmyIgAAAAAAAAAAAAACIiIiIAAAA
 AAAAUEECICABAAD/////+A4DgA==
 </rawitemdata></item>
-<item name='$DefaultFrameset'><text>Outer Frame</text></item>
 <item name='$Daos'><text>1</text></item>
-<item name='$TITLE'><text>frostillic.us Portfolio
-</text></item>
-<item name='$Flags'><text>J7FKzNZ4q!</text></item>
-<item name='$FlagsNoRefresh'><text/></item>
-<item name='$AllowPost8HTML'><text>1</text></item>
 <item name='$DBTheme'><text>Theme.theme</text></item>
-<item name='$DefaultXPage'><text>Projects.xsp</text></item></note>
+<item name='$LaunchXPageRunOnServer'><text>0</text></item>
+<item name='$AllowPost8HTML'><text>1</text></item>
+<item name='$DefaultFrameset'><text>Outer Frame</text></item>
+<item name='$DefaultXPage'><text>Projects.xsp</text></item>
+<item name='$TITLE'><text>frostillic.us Portfolio</text></item>
+<item name='$Flags'><text>Jz47qNZFK!</text></item>
+<item name='$FlagsNoRefresh'><text>rv</text></item></note>
 

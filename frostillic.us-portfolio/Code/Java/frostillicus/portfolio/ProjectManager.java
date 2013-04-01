@@ -2,8 +2,8 @@ package frostillicus.portfolio;
 
 import java.util.*;
 import java.io.Serializable;
-import com.ibm.xsp.extlib.util.ExtLibUtil;
-import lotus.domino.*;
+import org.openntf.domino.*;
+import org.openntf.domino.utils.XSPUtil;
 
 public class ProjectManager implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -15,27 +15,24 @@ public class ProjectManager implements Serializable {
 	private Date lastUpdated = null;
 
 	@SuppressWarnings("unchecked")
-	public Collection<Project> getProjects() throws NotesException {
+	public Collection<Project> getProjects() {
 
 		boolean needsReset = this.projects == null;
 		if(!needsReset) {
 			// Check to see if the DB has changed. Getting the last modified date is surprisingly cheap
-			Database database = ExtLibUtil.getCurrentDatabase();
-			try {
-				DateTime dt = database.getLastModified();
-				Date databaseModified = dt.toJavaDate();
-				dt.recycle();
-				if(databaseModified.after(this.lastUpdated)) {
-					needsReset = true;
-				}
-			} catch(NotesException ne) { }
+			Database database = XSPUtil.getCurrentDatabase();
+			DateTime dt = database.getLastModified();
+			Date databaseModified = dt.toJavaDate();
+			if(databaseModified.after(this.lastUpdated)) {
+				needsReset = true;
+			}
 		}
 
 		if(needsReset) {
 			this.projects = new TreeSet<Project>();
 			this.projectMap = new HashMap<String, Project>();
 
-			Database database = ExtLibUtil.getCurrentDatabase();
+			Database database = XSPUtil.getCurrentDatabase();
 			View projectsView = database.getView("Projects");
 			projectsView.setAutoUpdate(false);
 
@@ -56,7 +53,6 @@ public class ProjectManager implements Serializable {
 					} else {
 						project.setThumbnailImage(DEFAULT_THUMBNAIL);
 					}
-					thumbnailItem.recycle();
 				} else {
 					project.setThumbnailImage(DEFAULT_THUMBNAIL);
 				}
@@ -70,7 +66,6 @@ public class ProjectManager implements Serializable {
 					} else {
 						project.setImage(DEFAULT_IMAGE);
 					}
-					thumbnailItem.recycle();
 				} else {
 					project.setImage(DEFAULT_IMAGE);
 				}
@@ -80,17 +75,15 @@ public class ProjectManager implements Serializable {
 
 				Document tempDoc = projectDoc;
 				projectDoc = projectsView.getNextDocument(projectDoc);
-				tempDoc.recycle();
 			}
 
-			projectsView.recycle();
 
 			this.lastUpdated = new Date();
 		}
 		return this.projects;
 	}
 
-	public Map<String, Project> getProjectsById() throws NotesException {
+	public Map<String, Project> getProjectsById() {
 		this.getProjects();
 		return this.projectMap;
 	}
