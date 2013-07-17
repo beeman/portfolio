@@ -3,22 +3,22 @@
 	pageTitle="Project">
 
 	<xp:this.dataContexts>
-		<xp:dataContext var="pageController" value="${javascript: new frostillicus.controller.BasicDocumentController('doc')}" />
-		<xp:dataContext var="project" value="${ProjectManager.projectsById[param.documentId]}" loaded="${!pageController.newNote}"/>
+		<xp:dataContext var="project" value="${Projects[param.documentId]}" loaded="${not empty param.documentId}"/>
 	</xp:this.dataContexts>
 
 	<xp:this.data>
 		<xp:dominoDocument var="doc" formName="${'Project'}" action="openDocument" computeWithForm="both" />
 	</xp:this.data>
 
-	<xc:layout pageTitle="#{javascript:pageController.newNote ? 'Project' : doc.getValue('Name')}">
+	<xc:layout pageTitle="#{pageController.newNote ? 'Project' : doc.Name}">
 		<div class="project-page">
-			<xp:div loaded="${pageController.editable}">
+			<xp:div rendered="#{pageController.editable}">
 				<div class="form-horizontal">
-					<xc:bsControlGroup label="Name" loaded="${pageController.editable}">
+					<xc:bsControlGroup label="Name" rendered="#{pageController.editable}">
 						<xp:inputText id="Name" value="#{doc.Name}"/>
 					</xc:bsControlGroup>
 					<xc:bsControlGroup label="Description">
+						
 						<xp:inputTextarea id="Description" value="#{doc.Description}" rows="5" styleClass="input-xxlarge"/>
 					</xc:bsControlGroup>
 					<xc:bsControlGroup label="URLs">
@@ -45,8 +45,8 @@
 					</xp:button>
 				</p>
 			</xp:div>
-			<xp:div loaded="${!pageController.editable}">
-				<xp:image rendered="#{project.image != ''}" loaded="${!pageController.newNote}"
+			<xp:div rendered="#{!pageController.editable}">
+				<xp:image rendered="#{!pageController.newNote and project.image != ''}" 
 					url="#{project.image}" styleClass="thumbnail banner"/>
 					
 				<h4>Description</h4>

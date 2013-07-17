@@ -1,4 +1,4 @@
-package frostillicus.portfolio;
+package frostillicus;
 
 import java.util.*;
 

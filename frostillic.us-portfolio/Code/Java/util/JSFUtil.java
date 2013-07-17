@@ -1,4 +1,4 @@
-package frostillicus.portfolio;
+package util;
 
 import java.util.*;
 import java.util.zip.GZIPInputStream;
@@ -11,7 +11,7 @@ import org.openntf.domino.*;
 import org.openntf.domino.utils.XSPUtil;
 import lotus.domino.local.NotesBase;
 
-public abstract class Util {
+public abstract class JSFUtil {
 	// Via http://stackoverflow.com/questions/12740889/what-is-the-least-expensive-way-to-test-if-a-view-has-been-recycled
 	public static boolean isRecycled(lotus.domino.Base object) {
 		if(!(object instanceof NotesBase)) {

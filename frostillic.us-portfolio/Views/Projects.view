@@ -1,16 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <note default='true' class='view' xmlns='http://www.lotus.com/dxl' version='9.0'
- replicaid='85257AAB00645907'>
-<noteinfo noteid='2e6' unid='8D3E155540461B0385257AAB006D7DDC' sequence='5'>
-<created><datetime dst='true'>20121103T155556,44-04</datetime></created>
-<modified><datetime>20121216T215646,60-05</datetime></modified>
-<revised><datetime>20121216T215324,86-05</datetime></revised>
-<lastaccessed><datetime>20130109T020035,53-05</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20121103T155556,47-04</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Jesse Gallagher/O=MTC</name><name>CN=Jesse Gallagher/O=Frost</name></updatedby>
+ replicaid='85257BAB0064B476'>
+<noteinfo noteid='18e' unid='9223ADEF2BE5D74A85257BAB0064B786' sequence='6'>
+<created><datetime dst='true'>20130717T142005,82-04</datetime></created>
+<modified><datetime dst='true'>20130717T145611,22-04</datetime></modified>
+<revised><datetime dst='true'>20130717T145611,21-04</datetime></revised>
+<lastaccessed><datetime dst='true'>20130717T145611,21-04</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130717T142005,85-04</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Jesse Gallagher/O=Frost</name></updatedby>
 <wassignedby><name>CN=Jesse Gallagher/O=Frost</name></wassignedby>
 <item name='$FormulaClass' sign='true'><text>1</text></item>
-<item name='$TITLE' sign='true'><text>Projects</text></item>
 <item name='$Index' sign='true'><text/></item>
 <item name='$Formula' summary='true' sign='true'><formula compiled='true'>
 ZAAFADgAMwAFAAkABAALAAkABABTaG9ydE5hbWVOYW1lRGVzY3JpcHRpb24kQ29uZmxpY3QkUkVG
@@ -33,5 +32,6 @@ AAAAAQA=
 </rawitemdata></item>
 <item name='$Comment' sign='true'><text/></item>
 <item name='$Flags'><text>PY</text></item>
-<item name='$DesignerVersion'><text>8.5.3</text></item></note>
+<item name='$TITLE' sign='true'><text>Projects</text></item>
+<item name='$DesignerVersion' sign='true'><text>8.5.3</text></item></note>
 

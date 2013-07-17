@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="85257AAB00645907" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="2ce" sequence="2" unid="AC511B5DB16E737085257AAB006D35EB">
-<created><datetime dst="true">20121103T155252,27-04</datetime></created>
-<modified><datetime>20121216T215658,69-05</datetime></modified>
-<revised><datetime>20121216T215321,43-05</datetime></revised>
-<lastaccessed><datetime>20121216T215658,68-05</datetime></lastaccessed>
-<addedtofile><datetime dst="true">20121103T155252,83-04</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Jesse Gallagher/O=MTC</name><name>CN=Jesse Gallagher/O=Frost</name></updatedby>
+<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="85257BAB0064B476" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="262" sequence="5" unid="3250FB8AE6F743EE85257BAB0064BED1">
+<created><datetime dst="true">20130717T142024,49-04</datetime></created>
+<modified><datetime dst="true">20130717T142042,47-04</datetime></modified>
+<revised><datetime dst="true">20130717T142042,46-04</datetime></revised>
+<lastaccessed><datetime dst="true">20130717T142042,46-04</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130717T142024,51-04</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Jesse Gallagher/O=Frost</name></updatedby>
 <wassignedby><name>CN=Jesse Gallagher/O=Frost</name></wassignedby>
 <item name="$Flags"><text>34567Cg~[</text></item>
 <item name="$TITLE"><text>com/raidomatic/xml/XMLNode.java</text></item>

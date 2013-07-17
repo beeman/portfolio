@@ -1,6 +1,6 @@
 // http://www.bleedyellow.com/blogs/andyc/entry/a_flash_scope_for_xpages?lang=en
 
-package frostillicus.portfolio;
+package frostillicus;
 
 import java.util.Map;
 import javax.faces.context.*;

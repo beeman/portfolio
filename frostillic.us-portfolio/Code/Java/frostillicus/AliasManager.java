@@ -1,9 +1,10 @@
-package frostillicus.portfolio;
+package frostillicus;
 
 import java.util.*;
 import java.io.Serializable;
 
 import com.ibm.xsp.extlib.util.ExtLibUtil;
+
 
 import lotus.domino.*;
 
